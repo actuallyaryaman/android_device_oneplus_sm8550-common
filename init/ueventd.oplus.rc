@@ -26,3 +26,7 @@ firmware_directories /mnt/vendor/persist/display/
 
 # WiFi
 firmware_directories /mnt/vendor/persist/copy/ /odm/etc/wifi/ /mnt/vendor/persist/
+
+# Torch light
+/sys/devices/platform/11d00000.i2c5/i2c-5/5-0034/mt6360_pmu_fled.3.auto/mt6360_pmu_fled.0/rt-flash-led.0/flashlight/mt-flash-led1   torch_brightness  0660   cameraserver   camera
+/sys/devices/platform/11d00000.i2c5/i2c-5/5-0034/mt6360_pmu_fled.3.auto/mt6360_pmu_fled.1/rt-flash-led.1/flashlight/mt-flash-led2   torch_brightness  0660   cameraserver   camera

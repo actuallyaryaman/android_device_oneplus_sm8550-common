@@ -1,0 +1,12 @@
+genfscon proc /sys/walt/sched_busy_hyst_ns                 u:object_r:proc_sched:s0
+genfscon proc /sys/walt/sched_busy_hysteresis_enable_cpus  u:object_r:proc_sched:s0
+genfscon proc /sys/walt/sched_min_task_util_for_boost      u:object_r:proc_sched:s0
+genfscon proc /sys/walt/sched_min_task_util_for_colocation u:object_r:proc_sched:s0
+genfscon proc /sys/walt/sched_min_task_util_for_uclamp     u:object_r:proc_sched:s0
+
+# Camera Torch
+genfscon sysfs /devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-02/c42d000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_0/brightness          u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-02/c42d000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_0/max_brightness      u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-02/c42d000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_1/brightness          u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-02/c42d000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:torch_1/max_brightness      u:object_r:sysfs_torch:s0
+genfscon sysfs /devices/platform/soc/c42d000.qcom,spmi/spmi-0/0-02/c42d000.qcom,spmi:qcom,pm8350c@2:qcom,flash_led@ee00/leds/led:switch_0/brightness         u:object_r:sysfs_torch:s0
