@@ -58,8 +58,8 @@ lib_fixups: lib_fixups_user_type = {
 
 blob_fixups: blob_fixups_user_type = {
     (
-        'odm/bin/touchDaemon',
-        'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff',
+        # 'odm/bin/touchDaemon',
+        # 'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff',
         'vendor/bin/poweropt-service',
         'vendor/lib64/libaodoptfeature.so',
         'vendor/lib64/libapengine.so',
