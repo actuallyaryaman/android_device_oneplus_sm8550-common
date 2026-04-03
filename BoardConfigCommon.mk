@@ -244,5 +244,27 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# OPLUS Hardware HALs
+$(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,true)
+
+# OPLUS Vibrator HAL
+$(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
+
+# OPLUS LiveDisplay HAL
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AB,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_DM,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_PA,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,true)
+
+# OPLUS Touch HAL
+$(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_HTPR,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_TG,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,USE_OPLUSTOUCH,true)
+
+
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/sm8550-common/BoardConfigVendor.mk
