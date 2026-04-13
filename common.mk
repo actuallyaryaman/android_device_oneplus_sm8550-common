@@ -452,3 +452,6 @@ $(call inherit-product, vendor/oneplus/sm8550-common/sm8550-common-vendor.mk)
 #Bypass Charging
 PRODUCT_PACKAGES += \
     DeviceSettings
+
+PRODUCT_PACKAGES += \
+    Updater
