@@ -1,5 +1,0 @@
-# Allow system_app to search the oplus_chg directory
-allow system_app vendor_sysfs_usb_supply:dir search;
-
-# Allow system_app to read/write bypass charging node
-allow system_app vendor_sysfs_usb_supply:file rw_file_perms;
