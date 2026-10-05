@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: Apache-2.0
+
+android_app {
+    name: "DeviceWallpapers",
+    product_specific: true,
+    sdk_version: "current",
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    optimize: {
+        // The wallpaper picker discovers these resources by name at runtime.
+        enabled: false,
+    },
+}

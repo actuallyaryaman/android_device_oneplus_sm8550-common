@@ -447,5 +447,8 @@ PRODUCT_PACKAGES += \
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8550-common/sm8550-common-vendor.mk)
 
+# Device wallpaper collection and optional default image.
+$(call inherit-product, device/oneplus/sm8550-common/wallpapers/wallpapers.mk)
+
 PRODUCT_PACKAGES += \
     Updater

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<wallpapers>
+    <category id="device_wallpapers" title="@string/wallpaper_collection_title">
+        <!-- Add the image resource before uncommenting an entry like this:
+        <static-wallpaper id="wallpaper_01" src="@drawable/wallpaper_01" />
+        -->
+        <static-wallpaper id="wallpaper_01" src="@drawable/wallpaper_01" />
+        <static-wallpaper id="wallpaper_02" src="@drawable/wallpaper_02" />
+        <static-wallpaper id="wallpaper_03" src="@drawable/wallpaper_03" />
+        <static-wallpaper id="wallpaper_04" src="@drawable/wallpaper_04" />
+
+    </category>
+</wallpapers>

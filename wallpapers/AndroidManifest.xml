@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oneplus.device.wallpapers">
+    <application
+        android:allowBackup="false"
+        android:hasCode="true"
+        android:label="@string/wallpaper_collection_title">
+        <receiver
+            android:name=".WallpaperCustomizationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.launcher3.action.PARTNER_CUSTOMIZATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
