@@ -322,7 +322,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel/pixelstats \
 	hardware/google/pixel/power-libperfmgr  \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/voltage/interfaces/power-libperfmgr \
     hardware/oplus \
     hardware/qcom-caf/common/libqti-perfd-client \
 	hardware/pixelworks/interfaces
@@ -446,3 +446,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8550-common/sm8550-common-vendor.mk)
+
+PRODUCT_PACKAGES += \
+    Updater
